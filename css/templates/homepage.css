@@ -1,0 +1,240 @@
+/**
+ * Author(s): James Morris
+ *
+ * HOMEPAGE TEMPLATE
+ */
+/**
+ * Author(s): Your name here
+ *
+ * VARIABLES
+ *
+ * Variable have a naming convention for easy identification and reuse across projects
+ * 
+ * Prefixes:
+ * --------
+ * colour: @color, 
+ * transparent colour: @color[variant]T[percent num],  
+ * font: @font, 
+ * font-size: @size, (mixin if rems in use)
+ * zindex: @zIndex,
+ * spacings: @spacing,
+ * line height: @lineHeight,
+ */
+/**
+ * $Paths
+ */
+/**
+ * $Colours
+ */
+/* Red */
+/* White */
+/* Black */
+/* Transparency */
+/* $Font family */
+/* $Font sizes */
+/* $Z-Indexes */
+/* $Spacings */
+/* $Line heights */
+/* $Media queries */
+/**
+ * Author(s): Your name
+ *
+ * MIXINS
+ *
+ * Includes all mixins both parametric (function) mixins and standard mixins.
+ *
+ */
+/**
+ * $CONTENTS
+ */
+/**
+ * CONTENTS.....................You’re reading it!
+ * RETINA IMAGES................So you and just specify the standard image the rest is magic
+ * BOOTSTRAP HELPER MIXINS
+ * * Clearfix.....................For clearing floats via the parent
+ * * Hide text....................For image replacement
+ * * Tab focus....................
+ * * Place holder text............
+ * * Border radius................
+ * * Drop shadow..................
+ * * Text shadow..................
+ * * Transitions..................
+ * * Animatiobs...................
+ * * Transformations..............
+ * * Backface.....................
+ * * Background clip..............
+ * * Background size..............
+ * * Box sizing...................
+ * * CSS3 Content cols............
+ * * Optional hyphenation.........
+ * * Opacity......................
+ * * Translucent..................
+ * * Gradients....................
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hidden {
+  height: 1px;
+  /* Some older browsers don't support 0px high block elements */
+  height: 0px;
+  overflow: hidden;
+  text-indent: -9999%;
+}
+/**
+* CSS3 Properties 
+*/
+/* $VIDEO AND SECTION INFO */
+li.section-info p {
+  line-height: 1.6em;
+}
+li.section-info .btn {
+  margin: 0 auto;
+}
+li.section-info.twitter,
+li.video.twitter,
+footer li.twitter,
+li.section-info.sign-up,
+li.video.sign-up,
+footer li.sign-up,
+li.section-info.about,
+li.video.about,
+footer li.about {
+  display: block;
+  color: #1b1b1b;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+li.section-info.twitter h2,
+li.video.twitter h2,
+footer li.twitter h2,
+li.section-info.sign-up h2,
+li.video.sign-up h2,
+footer li.sign-up h2,
+li.section-info.about h2,
+li.video.about h2,
+footer li.about h2 {
+  margin: 0.5em 0;
+  font-size: 2.9rem;
+}
+li.section-info.twitter span,
+li.video.twitter span,
+footer li.twitter span,
+li.section-info.sign-up span,
+li.video.sign-up span,
+footer li.sign-up span,
+li.section-info.about span,
+li.video.about span,
+footer li.about span,
+li.section-info.twitter p,
+li.video.twitter p,
+footer li.twitter p,
+li.section-info.sign-up p,
+li.video.sign-up p,
+footer li.sign-up p,
+li.section-info.about p,
+li.video.about p,
+footer li.about p {
+  font-size: 1.6rem;
+}
+li.section-info.twitter .fa,
+li.video.twitter .fa,
+footer li.twitter .fa,
+li.section-info.sign-up .fa,
+li.video.sign-up .fa,
+footer li.sign-up .fa,
+li.section-info.about .fa,
+li.video.about .fa,
+footer li.about .fa {
+  margin-right: 0.3em;
+}
+li.section-info.about,
+li.video.about,
+footer li.about {
+  height: auto;
+  padding: 0;
+  line-height: 1.6em;
+}
+@media (min-width: 500px) {
+  li.section-info,
+  li.video,
+  footer li {
+    float: left;
+    width: 47.5%;
+    margin-right: 2.5%;
+  }
+  li.section-info.about,
+  li.video.about,
+  footer li.about {
+    width: 100%;
+    clear: left;
+  }
+  li.section-info:nth-child(even),
+  li.video:nth-child(even),
+  footer li:nth-child(even) {
+    margin-right: 0;
+    margin-left: 2.5%;
+  }
+  li.section-info:nth-child(odd),
+  li.video:nth-child(odd),
+  footer li:nth-child(odd) {
+    clear: left;
+  }
+}
+@media (min-width: 870px) {
+  li.section-info,
+  li.video,
+  footer li {
+    width: 23.125%;
+    margin-right: 2.5%;
+  }
+  li.section-info.about,
+  li.video.about,
+  footer li.about {
+    width: 48.75%;
+    float: left;
+  }
+  li.section-info:nth-child(even),
+  li.video:nth-child(even),
+  footer li:nth-child(even) {
+    margin-right: 2.5%;
+    margin-left: 0;
+  }
+  li.section-info:nth-child(odd),
+  li.video:nth-child(odd),
+  footer li:nth-child(odd) {
+    clear: none;
+  }
+  li.section-info:nth-child(n+4),
+  li.video:nth-child(n+4),
+  footer li:nth-child(n+4) {
+    margin-right: 0;
+  }
+  li.section-info:nth-child(n+5),
+  li.video:nth-child(n+5),
+  footer li:nth-child(n+5) {
+    clear: left;
+  }
+}
+/* $SECTION */
+@media (min-width: 870px) {
+  section:nth-child(even) {
+    background: #f4f4f4;
+  }
+  section:nth-child(even) .video h3 {
+    background-color: #f4f4f4;
+  }
+}

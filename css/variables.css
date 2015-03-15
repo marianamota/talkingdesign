@@ -1,0 +1,33 @@
+/**
+ * Author(s): Your name here
+ *
+ * VARIABLES
+ *
+ * Variable have a naming convention for easy identification and reuse across projects
+ * 
+ * Prefixes:
+ * --------
+ * colour: @color, 
+ * transparent colour: @color[variant]T[percent num],  
+ * font: @font, 
+ * font-size: @size, (mixin if rems in use)
+ * zindex: @zIndex,
+ * spacings: @spacing,
+ * line height: @lineHeight,
+ */
+/**
+ * $Paths
+ */
+/**
+ * $Colours
+ */
+/* Red */
+/* White */
+/* Black */
+/* Transparency */
+/* $Font family */
+/* $Font sizes */
+/* $Z-Indexes */
+/* $Spacings */
+/* $Line heights */
+/* $Media queries */

@@ -1,0 +1,50 @@
+/**
+ * Author(s): James Morris
+ *
+ * VIDEO LISTING -  MOBILE FIRST
+ *
+ */
+
+@import '../variables.less';
+@import '../mixins.less';
+
+li.video {
+	margin: 2em 0;
+	.video-title-wrapper {
+		position: relative;
+	}
+	//Vid title
+	h3 {
+		font-size: @sizeM;
+		margin: 0.15em 0;
+		padding: 0.2em 0.2em 0.2em 0;
+		background-color: @colorWhite;
+		display: inline-block;
+	}
+	h4 {
+		margin-top: 0;
+		margin-bottom: 0.6em;
+	}
+	.talk-blurb {
+		font-size: @sizeSSS;
+        color: @colorOffBlackL30;
+	}
+	iframe {
+		width: 100%;
+	}
+	.video-coming {
+		margin-top: 2em;
+		text-align: center;
+		div {
+			color: @colorOffBlackL30;
+		}
+		@media @desktop {
+			margin-top: 3em;
+		}
+	}
+	@media @tab {
+		h3 {
+			font-size: @sizeL;
+		}
+	}
+}

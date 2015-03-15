@@ -1,0 +1,208 @@
+/**
+ * Author(s): James Morris
+ *
+ * HEADER -  MOBILE FIRST
+ *
+ * Page header styles here
+ *
+ */
+/**
+ * Author(s): Your name here
+ *
+ * VARIABLES
+ *
+ * Variable have a naming convention for easy identification and reuse across projects
+ * 
+ * Prefixes:
+ * --------
+ * colour: @color, 
+ * transparent colour: @color[variant]T[percent num],  
+ * font: @font, 
+ * font-size: @size, (mixin if rems in use)
+ * zindex: @zIndex,
+ * spacings: @spacing,
+ * line height: @lineHeight,
+ */
+/**
+ * $Paths
+ */
+/**
+ * $Colours
+ */
+/* Red */
+/* White */
+/* Black */
+/* Transparency */
+/* $Font family */
+/* $Font sizes */
+/* $Z-Indexes */
+/* $Spacings */
+/* $Line heights */
+/* $Media queries */
+/**
+ * Author(s): Your name
+ *
+ * MIXINS
+ *
+ * Includes all mixins both parametric (function) mixins and standard mixins.
+ *
+ */
+/**
+ * $CONTENTS
+ */
+/**
+ * CONTENTS.....................You’re reading it!
+ * RETINA IMAGES................So you and just specify the standard image the rest is magic
+ * BOOTSTRAP HELPER MIXINS
+ * * Clearfix.....................For clearing floats via the parent
+ * * Hide text....................For image replacement
+ * * Tab focus....................
+ * * Place holder text............
+ * * Border radius................
+ * * Drop shadow..................
+ * * Text shadow..................
+ * * Transitions..................
+ * * Animatiobs...................
+ * * Transformations..............
+ * * Backface.....................
+ * * Background clip..............
+ * * Background size..............
+ * * Box sizing...................
+ * * CSS3 Content cols............
+ * * Optional hyphenation.........
+ * * Opacity......................
+ * * Translucent..................
+ * * Gradients....................
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hidden {
+  height: 1px;
+  /* Some older browsers don't support 0px high block elements */
+  height: 0px;
+  overflow: hidden;
+  text-indent: -9999%;
+}
+/**
+* CSS3 Properties 
+*/
+header.page-header {
+  background: url('/img/main-header.jpg') top center no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+header.page-header .intro {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  padding: 0 2rem;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  -webkit-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  -moz-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 870px) {
+  header.page-header .intro {
+    top: 20%;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+  }
+}
+header.page-header h1,
+header.page-header h2,
+header.page-header .intro-wrapper,
+header.page-header .author-details {
+  text-align: center;
+  padding: 0.3em;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+}
+header.page-header h1 {
+  width: 100%;
+  margin-bottom: 0;
+}
+header.page-header h1 img {
+  margin: 0 auto;
+  display: block;
+  max-width: 500px;
+  width: 85%;
+}
+@media (min-width: 500px) {
+  header.page-header h1 img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (min-width: 870px) {
+  header.page-header h1 img {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+header.page-header h1 span {
+  height: 1px;
+  /* Some older browsers don't support 0px high block elements */
+  height: 0px;
+  overflow: hidden;
+  text-indent: -9999%;
+  display: block;
+}
+header.page-header .author-details h2 {
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+header.page-header .author-details img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  bottom: 3px;
+  z-index: 200;
+}
+@media (min-width: 870px) {
+  header.page-header .author-details img {
+    width: 80px;
+    height: 80px;
+    margin: 0.8em 0;
+  }
+}
+header.page-header .intro-wrapper {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+@media (min-width: 500px) {
+  header.page-header {
+    height: 450px;
+  }
+}
+@media (min-width: 1024px) {
+  header.page-header {
+    height: 500px;
+  }
+}

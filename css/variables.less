@@ -1,0 +1,95 @@
+/**
+ * Author(s): Your name here
+ *
+ * VARIABLES
+ *
+ * Variable have a naming convention for easy identification and reuse across projects
+ * 
+ * Prefixes:
+ * --------
+ * colour: @color, 
+ * transparent colour: @color[variant]T[percent num],  
+ * font: @font, 
+ * font-size: @size, (mixin if rems in use)
+ * zindex: @zIndex,
+ * spacings: @spacing,
+ * line height: @lineHeight,
+ */
+
+/**
+ * $Paths
+ */
+ //Text variable to reduce image url etc.
+//@path: "/static/";
+
+/**
+ * $Colours
+ */
+
+@colorPrimary:        #ff1300; /* Red */
+@colorWhite:          #fff;    /* White */
+@colorBlack:          #000;    /* Black */
+@colorMidGrey:        #eee;
+@colorOffBlack:       #1b1b1b; 
+
+/* Transparency */
+@colorWhiteT30:       fadeout(@colorWhite, 30%);
+@colorWhiteT50:       fadeout(@colorWhite, 50%);
+@colorWhiteT80:       fadeout(@colorWhite, 80%);
+
+@colorBlackT40:       fadeout(@colorBlack, 40%);
+
+@colorOffBlackL15:    lighten(@colorOffBlack, 15%);
+@colorOffBlackL30:    lighten(@colorOffBlack, 30%);
+@colorOffBlackL60:    lighten(@colorOffBlack, 60%);
+@colorOffBlackL70:    lighten(@colorOffBlack, 70%);
+@colorOffBlackL73:    lighten(@colorOffBlack, 73%);
+@colorOffBlackL85:    lighten(@colorOffBlack, 85%);
+
+@colorPrimaryL12:     lighten(@colorPrimary, 12%);
+@colorPrimaryL20:     lighten(@colorPrimary, 20%);
+
+@colorLink :          #ff1300;
+@colorHover:          @colorPrimaryL12;
+
+/* $Font family */
+@fontArial: 'Arial', sans-serif;
+@fontRobo: 'Roboto Condensed', sans-serif;
+@fontOpen: 'Open Sans', sans-serif;
+
+/* $Font sizes */
+@sizeBase: 62.5%; //Allows 10px = 1em: all sizes px / 10 for REM conversion
+
+@sizeSu:    5rem;   //Size = 50px
+@sizeXXL:   4.3rem;
+@sizeXL:    3.6rem; //
+@sizeL:     2.9rem;
+@sizeML:    2.5rem; //
+@sizeM:     2.2rem;
+@sizeMS:    1.9rem; //
+@sizeS:     1.8rem; //Base size = 18px Mobile H4
+@sizeSS:    1.6rem;
+@sizeSSS:   1.4rem;
+
+
+
+
+/* $Z-Indexes */
+
+@zIndex1:   100; 
+@zIndex2:   200; //Header author image
+
+
+/* $Spacings */
+
+@spacingXL:           2em; 
+
+
+/* $Line heights */
+@lineHeight:          1.5em;
+
+
+/* $Media queries */
+@portrait-tab: ~"(min-width: 500px)";
+@tab: ~"(min-width: 870px)";
+@desktop: ~"(min-width: 1024px)";

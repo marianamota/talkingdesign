@@ -1,0 +1,134 @@
+/**
+ * Author(s): James Morris
+ *
+ * SURVEY LINKS -  MOBILE FIRST
+ *
+ *
+ */
+/**
+ * Author(s): Your name here
+ *
+ * VARIABLES
+ *
+ * Variable have a naming convention for easy identification and reuse across projects
+ * 
+ * Prefixes:
+ * --------
+ * colour: @color, 
+ * transparent colour: @color[variant]T[percent num],  
+ * font: @font, 
+ * font-size: @size, (mixin if rems in use)
+ * zindex: @zIndex,
+ * spacings: @spacing,
+ * line height: @lineHeight,
+ */
+/**
+ * $Paths
+ */
+/**
+ * $Colours
+ */
+/* Red */
+/* White */
+/* Black */
+/* Transparency */
+/* $Font family */
+/* $Font sizes */
+/* $Z-Indexes */
+/* $Spacings */
+/* $Line heights */
+/* $Media queries */
+/**
+ * Author(s): Your name
+ *
+ * MIXINS
+ *
+ * Includes all mixins both parametric (function) mixins and standard mixins.
+ *
+ */
+/**
+ * $CONTENTS
+ */
+/**
+ * CONTENTS.....................You’re reading it!
+ * RETINA IMAGES................So you and just specify the standard image the rest is magic
+ * BOOTSTRAP HELPER MIXINS
+ * * Clearfix.....................For clearing floats via the parent
+ * * Hide text....................For image replacement
+ * * Tab focus....................
+ * * Place holder text............
+ * * Border radius................
+ * * Drop shadow..................
+ * * Text shadow..................
+ * * Transitions..................
+ * * Animatiobs...................
+ * * Transformations..............
+ * * Backface.....................
+ * * Background clip..............
+ * * Background size..............
+ * * Box sizing...................
+ * * CSS3 Content cols............
+ * * Optional hyphenation.........
+ * * Opacity......................
+ * * Translucent..................
+ * * Gradients....................
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hidden {
+  height: 1px;
+  /* Some older browsers don't support 0px high block elements */
+  height: 0px;
+  overflow: hidden;
+  text-indent: -9999%;
+}
+/**
+* CSS3 Properties 
+*/
+.survey-link {
+  display: block;
+  padding: 0.5em;
+  background: #ff7166;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.survey-link:hover {
+  background: #ff4c3d;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.survey-link .fa {
+  font-size: 1.9rem;
+  margin-top: 0.2em;
+  margin-bottom: 0.3em;
+}
+.survey-link h3 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.8rem;
+}
+.survey-link span {
+  font-size: 1.4rem;
+}
+@media (min-width: 870px) {
+  .survey-link {
+    padding: 1em;
+  }
+}

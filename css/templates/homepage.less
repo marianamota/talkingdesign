@@ -1,0 +1,98 @@
+/**
+ * Author(s): James Morris
+ *
+ * HOMEPAGE TEMPLATE
+ */
+
+ @import 'variables.less';
+ @import 'mixins.less';
+
+ /* $VIDEO AND SECTION INFO */
+// Layout of video listing
+li.section-info {
+	p {
+		line-height: 1.6em;
+	}
+	.btn {
+		margin: 0 auto;
+	}
+}
+
+li.section-info,
+li.video,
+footer li {
+	&.twitter,
+	&.sign-up,
+	&.about {
+		display: block;
+		color: @colorOffBlack;
+		.box-sizing();
+		h2 {
+			margin: 0.5em 0;
+			font-size: @sizeL;
+		}
+		span,
+		p {
+			font-size: @sizeSS;
+		}
+		.fa {
+			margin-right: 0.3em;
+		}
+	}
+	&.about {
+		height: auto;
+		padding: 0;
+		line-height: 1.6em;
+	}
+	@media @portrait-tab {
+		&.about {
+			width: 100%;
+			clear: left;
+		}
+  		float: left;
+		width: 47.5%;
+		margin-right: 2.5%;
+		&:nth-child(even) {
+			margin-right: 0;
+			margin-left: 2.5%;
+		}
+		&:nth-child(odd) {
+			clear: left;
+		}
+	}
+	@media @tab {
+		&.about {
+			width: 48.75%;
+			float: left;
+		}
+		width: 23.125%;
+		margin-right: 2.5%;
+		&:nth-child(even) {
+			margin-right: 2.5%;
+			margin-left: 0;
+		}
+		&:nth-child(odd) {
+			clear: none;
+		}
+		&:nth-child(n+4) {
+			margin-right: 0;
+		}
+		&:nth-child(n+5) {
+			clear: left;
+		}
+	}
+}
+
+/* $SECTION */
+
+
+
+@media @tab {
+	section:nth-child(even) {
+		background: @colorOffBlackL85;
+		//Overide for video listing h3
+		.video h3 {
+			background-color: @colorOffBlackL85;
+		}
+	}
+}
