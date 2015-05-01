@@ -97,8 +97,8 @@
 * CSS3 Properties 
 */
 header.page-header {
-  background: url('/img/talkingdesign-header-illustration.svg') top center repeat-x #eeeeee;
-  background-size: contain;
+  background: url('/img/talking-design-illustration.jpg') top center repeat-x #eeeeee;
+  background-size: cover;
   height: 300px;
   width: 100%;
   position: relative;
@@ -115,9 +115,6 @@ header.page-header .intro {
   /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */
-  -webkit-text-shadow: 0 2px 3px rgba(255, 255, 255, 0.7);
-  -moz-text-shadow: 0 2px 3px rgba(255, 255, 255, 0.7);
-  text-shadow: 0 2px 3px rgba(255, 255, 255, 0.7);
 }
 @media (min-width: 870px) {
   header.page-header .intro {
@@ -131,9 +128,6 @@ header.page-header .author-details {
   text-align: center;
   padding: 0.3em;
   color: #1b1b1b;
-  -webkit-text-shadow: 0 0px 10px #eeeeee;
-  -moz-text-shadow: 0 0px 10px #eeeeee;
-  text-shadow: 0 0px 10px #eeeeee;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;
@@ -194,16 +188,30 @@ header.page-header .intro-wrapper {
   width: 100%;
   margin: 0 auto;
   color: #1b1b1b;
-  font-size: 1.8rem;
-  background-color: #eeeeee;
+  font-size: 1.6rem;
+  background-color: rgba(238, 238, 238, 0.7);
+}
+@media (min-width: 500px) {
+  header.page-header .intro-wrapper div {
+    font-size: 1.8rem;
+  }
 }
 @media (min-width: 500px) {
   header.page-header {
     height: 450px;
+    background-size: contain;
   }
 }
 @media (min-width: 1024px) {
   header.page-header {
     height: 500px;
   }
+}
+header.page-header .illustrator-credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.8em 1em;
+  font-size: 1.2rem;
+  background-color: rgba(238, 238, 238, 0.7);
 }
